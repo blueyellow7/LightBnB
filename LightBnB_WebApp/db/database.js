@@ -6,6 +6,7 @@ const pool = new Pool({
   database: 'lightbnb'
 });
 
+
 /// Users
 
 /**
@@ -54,6 +55,7 @@ const addUser = function(user) {
     .catch((err) => console.log(err.message));
 };
 
+
 /// Reservations
 
 /**
@@ -86,17 +88,17 @@ const getAllReservations = function(guest_id, limit = 10) {
 */
 const getAllProperties = function(options, limit) {
   const queryParams = [];
-  const whereConditions = options.city || options.owner_id || options.minimum_price_per_night || options.maximum_price_per_night;
   let queryString = `
     SELECT properties.*, avg(property_reviews.rating) as average_rating
     FROM properties
     JOIN property_reviews ON properties.id = property_id
     `;
+
+  // WHERE - filter by city, owner_id & min/max price
+  const whereConditions = options.city || options.owner_id || options.minimum_price_per_night || options.maximum_price_per_night;
   if (whereConditions) {
     queryString += `WHERE `;
   }
-
-  // WHERE - filter by city, owner_id & min/max price
   if (options.city) {
     queryParams.push(`%${options.city}%`);
     queryString += `city LIKE $${queryParams.length} AND `;
@@ -143,6 +145,7 @@ const getAllProperties = function(options, limit) {
     .then((res) => res.rows)
     .catch((err) => console.log(err.message));
 };
+
 
 /**
  * Add a property to the database
