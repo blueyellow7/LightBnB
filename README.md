@@ -16,11 +16,12 @@ LightBnB utilizes a database that connects to a javascript application so that w
 
 ## Installation
 1. Clone the repository onto your local device using ```git clone git@github.com:blueyellow7/LightBnB.git```
-3. Install dependencies using the `npm install` command.
-3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:3000/>.
-4. Go to <http://localhost:3000/> in your browser.
+2. us the following command: ```cd LightBnB_WebApp```
+3. In the LightBnB_WebApp directory, install dependencies using the `npm install` command.
+4. Start the web server using the `npm run local` command. The app will be served at <http://localhost:3000/>.
+5. Go to <http://localhost:3000/> in your browser.
 
-## Dependencies
+## Dependencies for LightBnB_WebApp 
 - Bycrypt
 - Express
 - Postgres
