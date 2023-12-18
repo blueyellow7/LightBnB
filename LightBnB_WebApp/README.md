@@ -4,11 +4,12 @@
 ### Structure of the database
 !["Databse ERD"](https://raw.githubusercontent.com/blueyellow7/LightBnB/main/LightBnB_WebApp/docs/lightbnb_ERD.png)
 ### Login page
-!["Login Page of Lightbnb"](https://raw.githubusercontent.com/blueyellow7/main/LightBnB_WebApp/docs/login.jpg)
+!["Login Page of Lightbnb"](https://raw.githubusercontent.com/blueyellow7/LightBnB/main/LightBnB_WebApp/docs/login.png)
 ### Page to view your own reservations
-!["My Reservations Pags"](https://raw.githubusercontent.com/blueyellow7/main/LightBnB_WebApp/docs/my_reservations.png)
+!["My Reservations Pags"](https://raw.githubusercontent.com/blueyellow7/LightBnB/main/LightBnB_WebApp/docs/my_reservations.png)
 ### Page to search for properties
-!["Search Properties Page"](https://raw.githubusercontent.com/blueyellow7/main/LightBnB_WebApp/docs/search.png)
+!["Search Properties Page"](https://raw.githubusercontent.com/blueyellow7/LightBnB/main/LightBnB_WebApp/docs/search.png)
+
 
 ## Project Structure
 ```
