@@ -1,12 +1,25 @@
 # LightBnB
 
-## Project Structure
+## Screentshots of the Final Product
+### Structure of the database
+!["Databse ERD"](https://raw.githubusercontent.com/blueyellow7/LightBnB_WebApp/master/docs/lightbnb_ERD.png)
+### Login page
+!["Login Page of Lightbnb"](https://raw.githubusercontent.com/blueyellow7/LightBnB_WebApp/master/docs/login.jpg)
+### Page to view your own reservations
+!["My Reservations Pags"](https://raw.githubusercontent.com/blueyellow7/LightBnB_WebApp/master/docs/my_reservations.png)
+### Page to search for properties
+!["Search Properties Page"](https://raw.githubusercontent.com/blueyellow7/LightBnB_WebApp/master/docs/search.png)
 
+## Project Structure
 ```
-.
 ├── db
 │   ├── json
 │   └── database.js
+├── docs
+│   ├──
+│   ├──
+│   ├── 
+│   └──
 ├── public
 │   ├── javascript
 │   │   ├── components 
@@ -39,10 +52,10 @@
 ├── README.md
 └── server.js
 ```
-
 * `db` contains all the database interaction code.
   * `json` is a directory that contains a bunch of dummy data in `.json` files.
   * `database.js` is responsible for all queries to the database. It doesn't currently connect to any database, all it does is return data from `.json` files.
+* `docs` contains all screenshots visible in this README.md file
 * `public` contains all of the HTML, CSS, and client side JavaScript. 
   * `index.html` is the entry point to the application. It's the only html page because this is a single page application.
   * `javascript` contains all of the client side javascript files.
@@ -53,3 +66,16 @@
 * `routes` contains the router files which are responsible for any HTTP requests to `/users/something` or `/api/something`. 
 * `styles` contains all of the sass files. 
 * `server.js` is the entry point to the application. This connects the routes to the database.
+
+## Installation
+1. Clone the repository onto your local device using ```git clone git@github.com:blueyellow7/LightBnB.git```
+3. Install dependencies using the `npm install` command.
+3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:3000/>.
+4. Go to <http://localhost:3000/> in your browser.
+
+## Dependencies
+- Bycrypt
+- Express
+- Postgres
+- Nodemon
+- Cookie-session
