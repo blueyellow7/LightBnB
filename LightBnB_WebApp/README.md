@@ -1,16 +1,5 @@
 # LightBnB
 
-## Screentshots of the Final Product
-### Structure of the database
-!["Databse ERD"](https://raw.githubusercontent.com/blueyellow7/LightBnB/main/LightBnB_WebApp/docs/lightbnb_ERD.png)
-### Login page
-!["Login Page of Lightbnb"](https://raw.githubusercontent.com/blueyellow7/LightBnB/main/LightBnB_WebApp/docs/login.png)
-### Page to view your own reservations
-!["My Reservations Pags"](https://raw.githubusercontent.com/blueyellow7/LightBnB/main/LightBnB_WebApp/docs/my_reservations.png)
-### Page to search for properties
-!["Search Properties Page"](https://raw.githubusercontent.com/blueyellow7/LightBnB/main/LightBnB_WebApp/docs/search.png)
-
-
 ## Project Structure
 ```
 ├── db
@@ -67,16 +56,3 @@
 * `routes` contains the router files which are responsible for any HTTP requests to `/users/something` or `/api/something`. 
 * `styles` contains all of the sass files. 
 * `server.js` is the entry point to the application. This connects the routes to the database.
-
-## Installation
-1. Clone the repository onto your local device using ```git clone git@github.com:blueyellow7/LightBnB.git```
-3. Install dependencies using the `npm install` command.
-3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:3000/>.
-4. Go to <http://localhost:3000/> in your browser.
-
-## Dependencies
-- Bycrypt
-- Express
-- Postgres
-- Nodemon
-- Cookie-session
